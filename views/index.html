@@ -23,15 +23,15 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Data karyawan akan ditampilkan di sini -->
+                {{range $index, $employee := .employees }}
                 <tr>
-                    <td>John Doe</td>
-                    <td>123456789</td>
-                    <td>Jl. Contoh No. 1</td>
-                    <td>08123456789</td>
-                    <td>johndoe@example.com</td>
+                    <td>{{$employee.Nama}}</td>
+                    <td>{{$employee.Nip}}</td>
+                    <td>{{$employee.Alamat}}</td>
+                    <td>{{$employee.Nohp}}</td>
+                    <td>{{$employee.Email}}</td>
                 </tr>
-                <!-- Tambahkan baris data lainnya sesuai kebutuhan -->
+                {{end}}
             </tbody>
         </table>
     </div>
