@@ -1,13 +1,15 @@
 package routes
 
 import (
+	"database/sql"
 	"net/http"
 
 	"github.com/yusril86/go-sample-app/controller"
 )
 
-func MapRoutes(server *http.ServeMux) {
+func MapRoutes(server *http.ServeMux, db *sql.DB) {
 	server.HandleFunc("/", controller.HelloWorld())
 	server.HandleFunc("/employee", controller.IndexEmployee())
+	server.HandleFunc("/employee/create", controller.CreateEmployee(db))
 
 }
