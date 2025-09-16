@@ -20,6 +20,7 @@
                     <th>Alamat</th>
                     <th>No HP</th>
                     <th>Email</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -30,6 +31,10 @@
                     <td>{{$employee.Alamat}}</td>
                     <td>{{$employee.Nohp}}</td>
                     <td>{{$employee.Email}}</td>
+                    <td>
+                        <a href="/employee/update?id={{$employee.Id}}" class="btn btn-sm btn-warning">Edit</a>
+                        <a href="/employee/delete/{{$employee.Id}}" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus karyawan ini?')">Delete</a>
+                    </td>
                 </tr>
                 {{end}}
             </tbody>
