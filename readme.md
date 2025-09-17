@@ -39,10 +39,13 @@ Go Sample App adalah aplikasi web sederhana yang dibangun menggunakan bahasa pem
 
 5. Akses aplikasi melalui browser di http://localhost:8080.
 
-Struktur Proyek
+**Struktur Proyek**:
+
+```bash
 go-sample-app/
 ├── main.go # Entry point aplikasi
 ├── controller/ # Handler untuk permintaan HTTP
 ├── model/ # Definisi model dan logika database
 ├── config/ # Konfigurasi aplikasi (misalnya koneksi database)
 └── README.md # Dokumentasi proyek
+```
