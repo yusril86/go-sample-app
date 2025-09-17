@@ -44,8 +44,8 @@ Go Sample App adalah aplikasi web sederhana yang dibangun menggunakan bahasa pem
 ```bash
 go-sample-app/
 ├── main.go # Entry point aplikasi
-├── controller/ # Handler untuk permintaan HTTP
-├── model/ # Definisi model dan logika database
-├── config/ # Konfigurasi aplikasi (misalnya koneksi database)
+├── controller/ # Handler untuk permintaan HTTP dan business logic
+├── database/ # Init  database
+├── routes/ # routing
 └── README.md # Dokumentasi proyek
 ```
